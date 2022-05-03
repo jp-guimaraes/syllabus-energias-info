@@ -1,0 +1,15 @@
+{
+  "name": "Informática",
+  "short_name": "Informática",
+  "start_url": "/syllabus-energias-info/",
+  "scope": "/syllabus-energias-info/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/syllabus-energias-info/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
