@@ -13,9 +13,9 @@
 <title>Categories | Informática</title>
 <link rel="manifest" href="/syllabus-energias-info/manifest.json">
 <link rel="icon" href="/syllabus-energias-info/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/syllabus-energias-info/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/syllabus-energias-info/book.min.e62c87c0a5f78618c1d9654bac000b57fdba292e359cd3ae3a97d4774328868d.css" integrity="sha256-5iyHwKX3hhjB2WVLrAALV/26KS41nNOuOpfUd0Moho0=" crossorigin="anonymous">
   <script defer src="/syllabus-energias-info/flexsearch.min.js"></script>
-  <script defer src="/syllabus-energias-info/en.search.min.ea81dc9d52809581196614549e491362e9b99a68e43e4bd39789c04ef28a776c.js" integrity="sha256-6oHcnVKAlYEZZhRUnkkTYum5mmjkPkvTl4nATvKKd2w=" crossorigin="anonymous"></script>
+  <script defer src="/syllabus-energias-info/en.search.min.34ccb5ef3ed466e425d1a36e6abc093a66cacbf7a4ef4e4787cdb755cbb941d9.js" integrity="sha256-NMy17z7UZuQl0aNuarwJOmbKy/ek705Hh823Vcu5Qdk=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://jp-guimaraes.github.io/syllabus-energias-info/categories/index.xml" title="Informática" />
 <!--
 Made with Book Theme
@@ -95,7 +95,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
 
 
  
@@ -155,9 +155,11 @@ https://github.com/alex-shpak/hugo-book
 
       
       
+<article class="markdown">
+  <h1>Categories</h1>
   
-
   
+</article>
  
       
 
@@ -173,7 +175,8 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
 
 
  
